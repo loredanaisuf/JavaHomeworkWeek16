@@ -40,7 +40,7 @@ function verifyCNP(){
 	let data=document.getElementById("data").value;
 	console.log(data);
 
-	if(CNP==" "|| CNP<13)
+	if(CNP==" "|| CNP.length<13)
 		document.getElementById("result2").innerHTML="Please insert a valid CNP";
 	else{
 		if(CNP.substring(1,3)==year.substring(2,4) && CNP.substring(3,5)==month && CNP.substring(5,7)==data)
