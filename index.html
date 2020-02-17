@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Homework </title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row"> 
+				<div class="col-md-6"> 
+					<h2>  Fibonacci sequence algorithm </h2>
+					<form method="post" class="form">
+						<label class="label" for="n">Insert the number</label>
+						<input type="text" id="n"> <br>
+
+						<button type="button" id="button1" onclick="fibonacci()"> Get Numbers </button> 
+					</form>
+					<p id="result1"></p>
+				</div>
+				<div class="col-md-6">
+					<h2>  Validate CNP algorithm </h2>
+					<form method="post" class="form">
+						<label class="label" for="CNP">Insert the CNP</label>
+						<input class="input" type="text" id="CNP"> <br>
+
+						<label class="label" for="data">Insert the data</label>
+						<input class="input"  type="text" id="data"> <br>
+
+						<label class="label" for="month">Insert the month</label>
+						<input class="input" type="text" id="month"> <br>
+
+						<label class="label" for="year">Insert the year</label>
+						<input class="input" type="text" id="year"> <br>
+						<button type="button" id="button2" onclick="verifyCNP()"> Verify </button> 
+					</form>
+					<p id="result2"> </p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
